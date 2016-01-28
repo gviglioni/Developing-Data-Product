@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Forest with First Two Principal Components</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Random Forest with First Two Principal Components">
+  <meta name="author" content="Giovanni Viglioni (2016 - Jan)">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Random Forest with First Two Principal Components</h1>
+    <h2>Developing Data Products - Shiny</h2>
+    <p>Giovanni Viglioni (2016 - Jan)<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>PCA Transformation I</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class=''>Let&#39;s check the data</p>
+
+<p><img src="assets/img/Base_Dados.jpg" alt="Base"></p>
+
+<p class=''>Due to the non-negative feature, transform the numeric variables by logarithm first</p>
+
+<p><img src="assets/img/Transform_Variable.jpg" alt="Transform"></p>
+
+<p class=''>Print and plot can be directly applied on the PCA object produced by prcomp function</p>
+
+<p class=''>Loadings and variance explained on each PC factors are printed and graphed</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>PCA Transformation II</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This function computes the standard deviation of the values in x. If na.rm is TRUE then missing values are removed before computation proceeds.</p>
+
+<p><img src="assets/img/Desvio_Padrao.jpg" alt="Desvio"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Scatter plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Show the relationship between two numeric variables</p>
+
+<p><img src="assets/img/Comando_ScatterPlot.jpg" alt="C_Scatter"></p>
+
+<p><img src="assets/img/Grafico_ScatterPlot.jpg" alt="G_Scatter"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Correlation matrix</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Calculate and visualize the correlation between features</p>
+
+<p><img src="assets/img/Comando_Correlation.jpg" alt="C_Correlation"></p>
+
+<p><img src="assets/img/Grafico_Correlation.jpg" alt="G_Correlation"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Shiny App: IRISApp</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/First_Imagem.jpg" alt="First_Imagem"></p>
+
+<p><a href="https://gviglioni.shinyapps.io/IrisApp/">Random Forest with First Two Principal Components App Hosted by shinyapps.io</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Thank you!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/Thanks.jpg" alt="Thanks"></p>
+
+<p>Feel free to send me your comments,questions or report bugs [<a href="mailto:gviglioni@gmail.com">gviglioni@gmail.com</a>].</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='PCA Transformation I'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='PCA Transformation II'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Scatter plot'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Correlation matrix'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Shiny App: IRISApp'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Thank you!'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
